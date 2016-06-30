@@ -1,10 +1,11 @@
 {
-  "name": "react-native-crosswalk-webview",
+  "name": "react-native-crosswalk",
   "version": "1.0.0",
-  "description": "Crosswalk Webview for React Native",
+  "description": "Crosswalk Webview for React Native Android",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./bin/install.sh"    
   },
   "repository": {
     "type": "git",
