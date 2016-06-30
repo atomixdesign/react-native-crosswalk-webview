@@ -5,6 +5,6 @@ unzip -j xwalk_core_library-${ver}.aar classes.jar
 zip -d classes.jar javax\*
 zip -r xwalk_core_library-${ver}.aar classes.jar
 rm -f classes.jar
-cp xwalk_core_library-${ver}.aar node_modules/react-native-crosswalk-android/libs/ 
+cp xwalk_core_library-${ver}.aar node_modules/react-native-crosswalk/libs/ 
 cp xwalk_core_library-${ver}.aar android/app/libs
 rm -f xwalk_core_library-${ver}.aar
