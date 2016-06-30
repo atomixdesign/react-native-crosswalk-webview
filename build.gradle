@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile "com.facebook.react:react-native:+"
+    compile (name: "xwalk_core_library-17.46.448.10", ext: "aar")
+}

@@ -1,0 +1,27 @@
+{
+  "name": "react-native-crosswalk-webview",
+  "version": "1.0.0",
+  "description": "Crosswalk Webview for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixdesign/react-native-crosswalk-webview.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "react-native",
+    "Crosswalk",
+    "Webview",
+    "Android"
+  ],
+  "author": "Mark Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomixdesign/react-native-crosswalk-webview/issues"
+  },
+  "homepage": "https://github.com/atomixdesign/react-native-crosswalk-webview#readme"
+}
