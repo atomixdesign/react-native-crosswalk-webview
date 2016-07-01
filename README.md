@@ -15,8 +15,8 @@ In android/setting.gradle
 
 ```sh
 ...
-include ':react-native-crosswalk', ':app'
-project(':react-native-crosswalk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-crosswalk')
+include ':CrosswalkWebView', ':app'
+project(':CrosswalkWebView').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-crosswalk')
 ```
 
 
