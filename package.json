@@ -1,6 +1,6 @@
 {
   "name": "react-native-crosswalk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Crosswalk Webview for React Native Android",
   "main": "index.js",
   "scripts": {

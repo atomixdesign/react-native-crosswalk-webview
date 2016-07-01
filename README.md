@@ -42,7 +42,8 @@ allprojects {
 ...
 dependencies {
   ...
-  compile project(':react-native-crosswalk')
+    compile (name: "xwalk_core_library-17.46.448.10", ext: "aar")    // <--- add this line
+    compile project(':CrosswalkWebView')    // <--- add this line
 }
 ```
 
