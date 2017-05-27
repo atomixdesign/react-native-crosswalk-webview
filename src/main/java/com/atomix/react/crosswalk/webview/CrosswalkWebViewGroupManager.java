@@ -5,6 +5,7 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.common.annotations.VisibleForTesting;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import org.xwalk.core.XWalkNavigationHistory;
@@ -26,10 +27,10 @@ public class CrosswalkWebViewGroupManager extends ViewGroupManager<CrosswalkWebV
     @VisibleForTesting
     public static final String REACT_CLASS = "CrosswalkWebView";
 
-    private Activity activity;
+    public ReactApplicationContext reactContext;
 
-    public CrosswalkWebViewGroupManager (Activity _activity) {
-        activity = _activity;
+    public CrosswalkWebViewGroupManager (ReactApplicationContext _reactContext) {
+        reactContext = _reactContext;
     }
 
     @Override
@@ -39,12 +40,14 @@ public class CrosswalkWebViewGroupManager extends ViewGroupManager<CrosswalkWebV
 
     @Override
     public CrosswalkWebView createViewInstance (ThemedReactContext context) {
-        return new CrosswalkWebView(context, activity);
+        Activity _activity = reactContext.getCurrentActivity();
+        return new CrosswalkWebView(context, _activity);
     }
 
     @ReactProp(name = "injectedJavascript")
     public void setinjectedJavascript(final CrosswalkWebView view, @Nullable final String script){
-        activity.runOnUiThread(new Runnable(){
+        Activity _activity = reactContext.getCurrentActivity();
+        _activity.runOnUiThread(new Runnable(){
             @Override
             public void run (){
                 view.evaluateJavascript(script, null);
@@ -54,7 +57,8 @@ public class CrosswalkWebViewGroupManager extends ViewGroupManager<CrosswalkWebV
 
     @ReactProp(name = "url")
     public void setUrl (final CrosswalkWebView view, @Nullable final String url) {
-        activity.runOnUiThread(new Runnable() {
+            Activity _activity = reactContext.getCurrentActivity();
+            _activity.runOnUiThread(new Runnable() {
             @Override
             public void run () {
                 view.load(url, null);

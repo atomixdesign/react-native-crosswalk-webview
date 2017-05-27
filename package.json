@@ -1,16 +1,66 @@
 {
-  "name": "react-native-crosswalk",
-  "version": "1.0.8",
+  "_args": [
+    [
+      {
+        "raw": "react-native-crosswalk@^1.0.3",
+        "scope": null,
+        "escapedName": "react-native-crosswalk",
+        "name": "react-native-crosswalk",
+        "rawSpec": "^1.0.3",
+        "spec": ">=1.0.3 <2.0.0",
+        "type": "range"
+      },
+      "/Users/admin/Applications/AndroidProjects/ehrenberg"
+    ]
+  ],
+  "_from": "react-native-crosswalk@>=1.0.3 <2.0.0",
+  "_id": "react-native-crosswalk@1.0.8",
+  "_inCache": true,
+  "_location": "/react-native-crosswalk",
+  "_nodeVersion": "6.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-crosswalk-1.0.8.tgz_1467342415103_0.1329307162668556"
+  },
+  "_npmUser": {
+    "name": "mark_atomix",
+    "email": "mark@atomix.com.au"
+  },
+  "_npmVersion": "3.9.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-crosswalk@^1.0.3",
+    "scope": null,
+    "escapedName": "react-native-crosswalk",
+    "name": "react-native-crosswalk",
+    "rawSpec": "^1.0.3",
+    "spec": ">=1.0.3 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-crosswalk/-/react-native-crosswalk-1.0.8.tgz",
+  "_shasum": "4be394c77670872820ce8494c32a58c6124b5217",
+  "_shrinkwrap": null,
+  "_spec": "react-native-crosswalk@^1.0.3",
+  "_where": "/Users/admin/Applications/AndroidProjects/ehrenberg",
+  "author": {
+    "name": "Mark Williams"
+  },
+  "bugs": {
+    "url": "https://github.com/atomixdesign/react-native-crosswalk-webview/issues"
+  },
+  "dependencies": {},
   "description": "Crosswalk Webview for React Native Android",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "./bin/install.sh"    
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "4be394c77670872820ce8494c32a58c6124b5217",
+    "tarball": "https://registry.npmjs.org/react-native-crosswalk/-/react-native-crosswalk-1.0.8.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atomixdesign/react-native-crosswalk-webview.git"
-  },
+  "gitHead": "59f237e2f20c1ea2d21a45ca289bbb6d06cc287b",
+  "homepage": "https://github.com/atomixdesign/react-native-crosswalk-webview#readme",
   "keywords": [
     "React",
     "Native",
@@ -19,10 +69,24 @@
     "Webview",
     "Android"
   ],
-  "author": "Mark Williams",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/atomixdesign/react-native-crosswalk-webview/issues"
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "mark_atomix",
+      "email": "mark@atomix.com.au"
+    }
+  ],
+  "name": "react-native-crosswalk",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixdesign/react-native-crosswalk-webview.git"
   },
-  "homepage": "https://github.com/atomixdesign/react-native-crosswalk-webview#readme"
+  "scripts": {
+    "install": "./bin/install.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
 }
